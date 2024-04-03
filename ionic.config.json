@@ -1,0 +1,7 @@
+{
+  "name": "Receitas Locais",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
