@@ -25,3 +25,35 @@
 #container a {
   text-decoration: none;
 }
+
+ion-menu-button {
+  color: #011b55 !important;
+  padding: 13px 12px;
+}
+
+ion-content h1 {
+  text-align: center;
+}
+
+div.text-container {
+  margin: 32px 8px;
+  padding: 16px 8px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.div-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 16px;
+}
+
+div.div-button ion-button {
+  padding: 0 32px;
+  height: 60px;
+  color: #ffffff;
+  background: #011b55;
+  border-radius: 8px;
+}

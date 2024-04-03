@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap"
+  rel="stylesheet"
+/>
+
+<ion-header collapse="condense" mode="ios">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color="main-blue"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu type="overlay" contentId="main-content">
+  <ion-header collapse="condense" mode="ios">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title color="main-blue" style="padding-top: 16px">Menu</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label><p>Página inicial</p></ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><p>Receitas</p> </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><p>Festival gastronómico</p></ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" id="main-content">
+  <ion-img src="assets/braga-homepage.jpg" alt=""></ion-img>
+  <h1 color="main-blue" style="padding: 0 32px; margin-top: 32px">
+    Receitas Tradicionais de Braga
+  </h1>
+  <div class="text-container">
+    <p>
+      A cidade de Braga  tem uma gastronomia extremamente rica, saborosa e
+      variada, segundo a tradição de várias gerações, com o bacalhau a
+      assumir-se como o prato favorito. A arte da culinária em Braga é famosa,
+      não só pela variedade de ementas, mas sobretudo pelo cuidado e frescura na
+      sua confeção.
+    </p>
+    <p>
+      É na doçaria que a cozinha de Braga atinge uma maior originalidade e
+      requinte, com o pudim Abade de Priscos, os doces de romaria e os biscoitos
+      secos para acompanhar o chá, bem como outras especialidades ricas de longa
+      tradição conventual e popular.
+    </p>
+    <p>
+      Vamos então descobrir alguns dos melhores pratos e doces desta cidade e
+      como estes são confecionados de forma a cumprirem as suas tradições de
+      sabor.
+    </p>
+    <div class="div-button">
+      <ion-button fill="clear" class="buttons">Ver receitas</ion-button>
+    </div>
+  </div>
+  <div class="text-container">
+    <p>
+      Se ficou com curiosidade acerca da gastronomia bracarense, poderá
+      informar-se acerca do festival gastronómico que irá decorrer em Braga onde
+      pode explorar toda uma variedade de sabores da cozinha desta cidade.
+    </p>
+    <div class="div-button">
+      <ion-button fill="clear" class="buttons">Saber mais</ion-button>
+    </div>
   </div>
 </ion-content>
